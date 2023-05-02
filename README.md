@@ -14,3 +14,13 @@ Our mission is to make the university experience hassle-free and more enjoyable 
 
 > HOME PAGE 
 ![screencapture-localhost-slp-index-html-2023-05-02-14_31_28](https://user-images.githubusercontent.com/113840197/235711684-19374dea-7b6f-4b06-aaff-c85da956c3db.png)
+
+>PYQ PAGE
+![screencapture-localhost-SLP-pyq-ug-index-php-2023-05-02-14_42_12](https://user-images.githubusercontent.com/113840197/235712017-b44cff88-c087-415d-8eb4-ec82b811efbc.png)
+
+>ACCOMMODATION PAGE
+![screencapture-localhost-SLP-accommodation-index-html-2023-05-02-14_42_44](https://user-images.githubusercontent.com/113840197/235712323-07e8ff55-300a-40b1-8b6e-c9ffa3c9b8bd.png)
+
+>ECOMMERCE PAGE
+![screencapture-127-0-0-1-8000-2023-05-02-11_17_24](https://user-images.githubusercontent.com/113840197/235712466-10d48dc2-9c49-4f25-a5bc-95962d14b051.png)
+
