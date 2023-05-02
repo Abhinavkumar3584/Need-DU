@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width:80%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  /* padding: 12px 20px 12px 40px; Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  /* margin-bottom: 12px; Add some space below the input */
+  margin-top: 10px;
+}
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="navlogo">
+          <a  style="margin-bottom: 30px;"  href="#">Need DU</a>
+        </div>
+        <div class="weblogo">
+          <img src="/SLP/accommodation/weblogo.png" alt="">
+        </div>
+        
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+       
+      <div class="col-12"></div>
+      <h1>Accommodation Near your College</h1>
+
+      <div class="container">
+        <div class="row">
+
+      
+      <form class="Input">
+        
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search College.." title="Type in a name">
+        </form>
+      
+      
+          
+          <table id="myTable"
+          class="table table-image">
+            <thead>
+              <tr>
+                <!-- <th scope="col">Day</th> -->
+                <th scope="col" class="diff"></th>
+                <th scope="col">Name/Address</th>
+                <th scope="col">Flat/PG/Hostel</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Nearby Colleges</th>
+                <th scope="col">Map view</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td class="w-25">
+                  <img src="pg6.png" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td> <b>Pathak Rooms</b> Near Rani Public School, <br> Snat Nagar, Burari</td>
+                <td>Flat</td>
+                <td>7500024959</td>
+                <td>Cluster Innovation Centre, <br> Khalsha College</td>
+                <td>
+                  <a href="https://goo.gl/maps/uT25yhPwx5vf9okL9">
+                    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+                  </a>
+                  
+                </td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td class="w-25">
+                  <img src="pg2.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td> <b>Sharma PG </b> Kamla Market, North Delhi </td>
+                <td>PG</td>
+                <td>7536056948</td>
+                <td>Keshav Maha Vidyalaya,
+                  <br> Aditi Mahavidyalaya,
+                     <br> Bhaskara Charya College </td>
+                <td>
+                  <a href="https://goo.gl/maps/uT25yhPwx5vf9okL9">
+                    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+                  </a>
+                  
+                </td> 
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td class="w-25">
+                  <img src="pg5.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td><b>Harit vihar</b> Sant Nagar, Burari </td>
+                <td>Flat</td>
+                <td>9205030811</td>
+                <td>Cluster Innovation Cetre, <br> Khalsa College, <br> Miranda House </td>
+                <td>
+                  <a href="https://goo.gl/maps/uT25yhPwx5vf9okL9">
+                    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+                  </a>
+                  
+                </td>   
+              </tr>
+              
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td class="w-25">
+                  <img src="pg4.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>Sri Ganesha PG</td>
+                <td>Flat</td>
+                <td>6396734265</td>
+                <td>Hindu College,
+                     <br>Lady Shri Ram College(W)</td>
+                <td>
+                  <a href="https://goo.gl/maps/uT25yhPwx5vf9okL9">
+                    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+                  </a>
+                  
+                </td> 
+              </tr>
+              
+            </tbody>
+          </table>   
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          var found = false; // flag to check if match is found
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[4];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+                found = true;
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+          var noMatchRow = document.getElementById("noMatchRow");
+          if (!found) { // display message if no match is found
+            if (!noMatchRow) { // create row if it doesn't exist
+              noMatchRow = document.createElement('tr');
+              noMatchRow.id = "noMatchRow";
+              var noMatchCell = document.createElement('td');
+              noMatchCell.setAttribute('colspan', '5');
+              noMatchCell.textContent = 'No matching results found.';
+              noMatchRow.appendChild(noMatchCell);
+              table.appendChild(noMatchRow);
+            }
+          } else { // remove message if it exists
+            if (noMatchRow) {
+              noMatchRow.parentNode.removeChild(noMatchRow);
+            }
+          }
+        }
+        </script>
+        
+        <footer>
+          <div class="footer-wrapper">
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-phone"></i> +91 7500024959</li>
+                <li><i class="fas fa-envelope"></i> dustudent008@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> cic cluster innovation centre,DU</li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h3>Follow Us</h3>
+              <ul>
+              <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Need DU. All rights reserved.</p>
+          </div>
+        </footer>
+
+</body>
+</html>
