@@ -12,6 +12,8 @@ Furthermore, we understand the importance of study materials, and hence we provi
 
 Our mission is to make the university experience hassle-free and more enjoyable for all students. We hope you find our website useful and look forward to serving you.
 
+To use this website, download the code files and run the index.html file
+
 > HOME PAGE 
 ![screencapture-localhost-slp-index-html-2023-05-02-14_31_28](https://user-images.githubusercontent.com/113840197/235711684-19374dea-7b6f-4b06-aaff-c85da956c3db.png)
 
